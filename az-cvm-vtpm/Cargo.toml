@@ -48,3 +48,7 @@ thiserror = "1.0.38"
 sev = "4.0.0"
 ureq = { version = "2.6.2", default-features = false, features = ["json"] }
 zerocopy = { version = "0.7.26", features = ["derive"] }
+
+[patch.crates-io]
+tss-esapi = { git = "https://github.com/fortanix/rust-tss-esapi.git", branch = "savvas/build-with-no-pkgconfig" }
+tss-esapi-sys = { git = "https://github.com/fortanix/rust-tss-esapi.git", branch = "savvas/build-with-no-pkgconfig" }
